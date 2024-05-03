@@ -2,16 +2,22 @@
     padding: 20px 60px;
     border-radius: 10px;
     min-height: 70vh;
+    min-width: 50vh;
     background-color: rgba(226, 226, 226, 0.2);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
+.weather-title {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
 .search-bar {
-    border: 2px solid rgb(102, 92, 92);
+    border: 2px solid rgb(147, 148, 199);
     font-size: 1rem;
-    text-indent: 30px;
+    text-indent: 40px;
     border-radius: 20px;
-    height: 40px;
+    height: 45px;
     width: 170px;
     text-align: left;
     transition: width .6s;
@@ -21,5 +27,3 @@
     outline: none;
     width: 300px;
 }
-
-.search-bar::placeholder {}
