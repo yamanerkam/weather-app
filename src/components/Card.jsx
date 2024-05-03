@@ -7,7 +7,7 @@ export default function Card() {
         <div className='card'>
             <h1>Weather App🌤
             </h1>
-            <input type="text" name="" id="" />
+            <input className='search-bar' placeholder="Search City.." type="text" name="" id="" />
 
             <div className="weather-content">
                 <h2 className='city'></h2>

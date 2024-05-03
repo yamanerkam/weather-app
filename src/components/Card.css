@@ -1,6 +1,25 @@
 .card {
-    width: 50vh;
+    padding: 20px 60px;
     border-radius: 10px;
+    min-height: 70vh;
     background-color: rgba(226, 226, 226, 0.2);
-
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
+
+.search-bar {
+    border: 2px solid rgb(102, 92, 92);
+    font-size: 1rem;
+    text-indent: 30px;
+    border-radius: 20px;
+    height: 40px;
+    width: 170px;
+    text-align: left;
+    transition: width .6s;
+}
+
+.search-bar:focus {
+    outline: none;
+    width: 300px;
+}
+
+.search-bar::placeholder {}
