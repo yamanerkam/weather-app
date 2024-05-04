@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './Card.css'
-import { div } from 'three/examples/jsm/nodes/Nodes.js'
 
 
 export default function Card() {
