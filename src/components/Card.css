@@ -5,6 +5,21 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+        /* Smaller padding for narrower screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+        border-radius: 5px;
+        /* Maybe reduce border-radius too */
+    }
+}
+
 .weather-title {
     margin-bottom: 15px;
     font-size: 2.5rem;
