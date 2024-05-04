@@ -1,8 +1,6 @@
 .card {
     padding: 20px 60px;
     border-radius: 10px;
-    min-height: 70vh;
-    min-width: 50vh;
     background-color: rgba(226, 226, 226, 0.2);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
@@ -26,4 +24,33 @@
 .search-bar:focus {
     outline: none;
     width: 300px;
+}
+
+.location-name {}
+
+.temp-icon {
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp {
+    position: relative;
+    top: 20px;
+}
+
+.temp::after {
+    content: '°C';
+    font-size: 30px;
+    position: relative;
+    bottom: 15px;
+}
+
+.desc {
+    position: relative;
+    bottom: 40px;
+    font-weight: 700;
 }

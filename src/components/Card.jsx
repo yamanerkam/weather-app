@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Card.css'
+import { div } from 'three/examples/jsm/nodes/Nodes.js'
 
 
 export default function Card() {
@@ -7,7 +8,10 @@ export default function Card() {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
     const [data, setData] = useState(null)
+    const date = new Date()
+    console.log(date)
     const api = 'b12e78acc7233683cbb28f56edc816fb'
+
 
 
     const handleSubmit = async (e) => {
@@ -52,7 +56,19 @@ export default function Card() {
                 type="text"
                 name="city"
                 id="" />
-            {data && <p>{data.main.temp}</p>}
+            {data && (<div>
+                <h2 className='location-name'>{data.name}, {data.sys.country}</h2>
+                <div className='temp-icon'>
+                    <img className='icon' src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt="" />
+                    <h1 className='temp'>{Math.ceil(data.main.temp)}</h1>
+                </div>
+
+                <div className='desc'>
+                    <p>{(data.weather[0].description).toUpperCase()}</p>
+                    <p>Wind Speed: {data.wind.speed}m/s</p>
+                </div>
+
+            </div>)}
             {loading && <p>loading</p>}
             {error && <p>{error}</p>}
 
