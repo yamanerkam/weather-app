@@ -10,14 +10,13 @@ export default function Card() {
     const [data, setData] = useState(null)
     const date = new Date()
     console.log(date)
-    const api = 'b12e78acc7233683cbb28f56edc816fb'
 
 
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         console.log(cityName)
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${api}&units=metric`
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=b12e78acc7233683cbb28f56edc816fb&units=metric`
 
 
 
